@@ -1,8 +1,20 @@
 # 回调方法
 
 ::: warning 警告
-本文档适用于 WAuxiliary v1.2.3.r722.c2ba115 版本
+本文档适用于 WAuxiliary v1.2.6 版本
 :::
+
+## 插件加载
+
+```java
+void onLoad();
+```
+
+## 插件卸载
+
+```java
+void onUnLoad();
+```
 
 ## 监听收到消息
 
@@ -10,10 +22,10 @@
 void onHandleMsg(Object msgInfoBean);
 ```
 
-## 长按发送按钮
+## 单击发送按钮
 
 ```java
-boolean onLongClickSendBtn(String text);
+boolean onClickSendBtn(String text);
 ```
 
 ## 监听成员变动
